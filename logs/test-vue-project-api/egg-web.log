@@ -2816,3 +2816,20 @@ hostname: lmq-TM1701
 2021-01-28 14:34:19,121 INFO 3845 [egg-mongoose] mongodb://root:******@127.0.0.1:27017/test-vue-project connected successfully
 2021-01-28 14:34:19,123 INFO 3845 [egg-mongoose] instance[0] start successfully
 2021-01-28 14:34:19,127 INFO 3845 [egg:core] dump config after ready, 3ms
+2021-01-28 15:57:16,483 INFO 23562 [egg:logger] init all loggers with options: {"dir":"/home/lmq/yi-work/test/test-vue-project-api/logs/test-vue-project-api","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"test-vue-project-api-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2021-01-28 15:57:16,505 INFO 23562 [egg-multipart] stream mode enable
+2021-01-28 15:57:16,757 INFO 23562 [egg-mongoose] connecting mongodb://root:******@127.0.0.1:27017/test-vue-project
+2021-01-28 15:57:16,826 INFO 23562 [egg-static] starting static serve /public/ -> /home/lmq/yi-work/test/test-vue-project-api/app/public
+2021-01-28 15:57:16,828 INFO 23562 [egg-security] use methodnoallow middleware
+2021-01-28 15:57:16,828 INFO 23562 [egg-security] use noopen middleware
+2021-01-28 15:57:16,828 INFO 23562 [egg-security] use nosniff middleware
+2021-01-28 15:57:16,829 INFO 23562 [egg-security] use xssProtection middleware
+2021-01-28 15:57:16,829 INFO 23562 [egg-security] use xframe middleware
+2021-01-28 15:57:16,829 INFO 23562 [egg-security] use dta middleware
+2021-01-28 15:57:16,829 INFO 23562 [egg-security] compose 6 middlewares into one security middleware
+2021-01-28 15:57:16,839 INFO 23562 [egg:core] dump config after load, 4ms
+2021-01-28 15:57:16,841 INFO 23562 [egg-mongoose] starting...
+2021-01-28 15:57:16,870 INFO 23562 [egg-watcher:application] watcher start success
+2021-01-28 15:57:16,887 INFO 23562 [egg-mongoose] mongodb://root:******@127.0.0.1:27017/test-vue-project connected successfully
+2021-01-28 15:57:16,888 INFO 23562 [egg-mongoose] instance[0] start successfully
+2021-01-28 15:57:16,893 INFO 23562 [egg:core] dump config after ready, 4ms

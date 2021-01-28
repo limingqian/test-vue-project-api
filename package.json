@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "egg-scripts start --daemon",
+    "stop": "egg-scripts stop",
     "dev": "egg-bin dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +15,7 @@
     "egg": "^2.27.0",
     "egg-cors": "^2.2.3",
     "egg-mongoose": "^3.2.0",
+    "egg-scripts": "^2.13.0",
     "moment": "^2.29.1"
   },
   "devDependencies": {

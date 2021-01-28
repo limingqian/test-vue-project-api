@@ -580,3 +580,9 @@
 2021-01-28 14:34:18,702 INFO 3845 [egg-schedule]: register schedule /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
 2021-01-28 14:34:18,702 INFO 3845 [egg-schedule]: register schedule /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/app/schedule/clean_log.js
 2021-01-28 14:34:18,702 INFO 3845 [egg-schedule]: register schedule /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2021-01-28 15:57:16,900 INFO 23550 [Timer] /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 45163103ms at 2021-01-29 04:30:00.003
+2021-01-28 15:57:16,900 INFO 23550 [Timer] /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 28963100ms at 2021-01-29 00:00:00.000
+2021-01-28 15:57:16,900 INFO 23550 [Timer] /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 28964100ms at 2021-01-29 00:00:01.000
+2021-01-28 15:57:16,504 INFO 23562 [egg-schedule]: register schedule /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2021-01-28 15:57:16,504 INFO 23562 [egg-schedule]: register schedule /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/app/schedule/clean_log.js
+2021-01-28 15:57:16,504 INFO 23562 [egg-schedule]: register schedule /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

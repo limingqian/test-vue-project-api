@@ -100,7 +100,6 @@
         "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-watcher/config/locales",
         "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-schedule/config/locales",
         "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-multipart/config/locales",
-        "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-development/config/locales",
         "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/config/locales",
         "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/locales",
         "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-view/config/locales",
@@ -116,7 +115,7 @@
       "functionName": "__"
     },
     "watcher": {
-      "type": "development",
+      "type": "default",
       "eventSources": {
         "default": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-watcher/lib/event-sources/default",
         "development": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-watcher/lib/event-sources/development"
@@ -147,14 +146,6 @@
         "cron": "0 30 4 * * *"
       }
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false,
-      "overrideIgnore": false
-    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -169,12 +160,13 @@
       "dir": "/home/lmq/yi-work/test/test-vue-project-api/app/public",
       "dynamic": true,
       "preload": false,
-      "buffer": false,
-      "maxFiles": 1000
+      "buffer": true,
+      "maxFiles": 1000,
+      "maxAge": 31536000
     },
     "view": {
       "root": "/home/lmq/yi-work/test/test-vue-project-api/app/view",
-      "cache": false,
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
       "mapping": {}
@@ -201,7 +193,7 @@
         }
       }
     },
-    "env": "local",
+    "env": "prod",
     "name": "test-vue-project-api",
     "keys": "<String len: 20>",
     "cookies": {},
@@ -217,6 +209,8 @@
       "description": "",
       "main": "index.js",
       "scripts": {
+        "start": "egg-scripts start --daemon",
+        "stop": "egg-scripts stop",
         "dev": "egg-bin dev",
         "test": "echo \"Error: no test specified\" && exit 1"
       },
@@ -226,6 +220,7 @@
         "egg": "^2.27.0",
         "egg-cors": "^2.2.3",
         "egg-mongoose": "^3.2.0",
+        "egg-scripts": "^2.13.0",
         "moment": "^2.29.1"
       },
       "devDependencies": {
@@ -266,21 +261,19 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/home/lmq/yi-work/test/test-vue-project-api/logs/test-vue-project-api",
+      "dir": "/home/lmq/logs/test-vue-project-api",
       "encoding": "utf8",
-      "env": "local",
+      "env": "prod",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": false,
+      "disableConsoleAfterReady": true,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "test-vue-project-api-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "type": "application"
     },
@@ -318,8 +311,7 @@
       "overrideMethod",
       "session",
       "securities",
-      "i18n",
-      "eggLoaderTrace"
+      "i18n"
     ],
     "workerStartTimeout": 600000,
     "serverTimeout": null,
@@ -425,7 +417,7 @@
       "version": "2.8.0"
     },
     "development": {
-      "enable": true,
+      "enable": false,
       "package": "egg-development",
       "name": "development",
       "dependencies": [

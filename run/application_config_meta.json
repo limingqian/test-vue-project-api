@@ -28,7 +28,7 @@
       "value": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/config/config.local.js",
+      "enable": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/config/config.default.js",
       "maxAge": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/config/config.default.js",
       "includeSubdomains": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/config/config.default.js"
     },
@@ -104,7 +104,7 @@
     "cookieMaxAge": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-watcher/config/config.local.js",
+    "type": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-watcher/config/config.default.js",
     "eventSources": {
       "default": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-watcher/config/config.default.js",
       "development": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-watcher/config/config.default.js"
@@ -135,14 +135,6 @@
       "cron": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-multipart/config/config.default.js"
     }
   },
-  "development": {
-    "watchDirs": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-development/config/config.default.js",
-    "ignoreDirs": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-development/config/config.default.js",
-    "fastReady": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-development/config/config.default.js",
-    "reloadOnDebug": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-development/config/config.default.js",
-    "overrideDefault": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-development/config/config.default.js",
-    "overrideIgnore": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-development/config/config.default.js"
-  },
   "logrotator": {
     "filesRotateByHour": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/config/config.default.js",
     "hourDelimiter": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-logrotator/config/config.default.js",
@@ -157,12 +149,13 @@
     "dir": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/config.default.js",
     "dynamic": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/config.default.js",
     "preload": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/config.default.js",
-    "buffer": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/config.default.js",
-    "maxFiles": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/config.default.js"
+    "buffer": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/config.prod.js",
+    "maxFiles": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/config.default.js",
+    "maxAge": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-static/config/config.prod.js"
   },
   "view": {
     "root": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-view/config/config.default.js",
-    "cache": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-view/config/config.local.js",
+    "cache": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-view/config/config.default.js",
     "defaultExtension": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-view/config/config.default.js",
     "defaultViewEngine": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-view/config/config.default.js",
     "mapping": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-view/config/config.default.js"
@@ -182,6 +175,8 @@
     "description": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
     "main": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
     "scripts": {
+      "start": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
+      "stop": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
       "dev": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
       "test": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js"
     },
@@ -191,6 +186,7 @@
       "egg": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
       "egg-cors": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
       "egg-mongoose": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
       "moment": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
@@ -243,9 +239,7 @@
     "coreLogName": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
     "agentLogName": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
     "errorLogName": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
-    "coreLogger": {
-      "consoleLevel": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.local.js"
-    },
+    "coreLogger": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js",
     "allowDebugAtProd": "/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
