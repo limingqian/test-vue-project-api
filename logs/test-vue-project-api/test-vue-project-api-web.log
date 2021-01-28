@@ -1,0 +1,98 @@
+2020-11-16 13:38:11,894 ERROR 16873 [-/127.0.0.1/-/1ms GET /] nodejs.MongooseServerSelectionError: [egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "[egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 16873
+hostname: lmq-TM1701
+
+2021-01-28 14:33:03,838 WARN 2829 [-/127.0.0.1/-/20ms POST /user/login] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-01-28 14:33:03,840 WARN 2829 [-/127.0.0.1/-/22ms POST /user/login] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-bodyparser/index.js:95:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "missing csrf token"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 2829
+hostname: lmq-TM1701
+
+2021-01-28 14:33:31,648 WARN 3716 [-/127.0.0.1/-/13ms POST /user/login] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-01-28 14:33:31,650 WARN 3716 [-/127.0.0.1/-/15ms POST /user/login] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-bodyparser/index.js:95:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "missing csrf token"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 3716
+hostname: lmq-TM1701
+
+2021-01-28 14:33:53,816 WARN 3744 [-/127.0.0.1/-/14ms POST /user/login] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-01-28 14:33:53,818 WARN 3744 [-/127.0.0.1/-/15ms POST /user/login] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-bodyparser/index.js:95:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "missing csrf token"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 3744
+hostname: lmq-TM1701
+
+2021-01-28 14:34:04,810 WARN 3814 [-/127.0.0.1/-/14ms POST /user/login] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-01-28 14:34:04,812 WARN 3814 [-/127.0.0.1/-/15ms POST /user/login] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/home/lmq/yi-work/test/test-vue-project-api/node_modules/koa-bodyparser/index.js:95:11)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "missing csrf token"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 3814
+hostname: lmq-TM1701
+

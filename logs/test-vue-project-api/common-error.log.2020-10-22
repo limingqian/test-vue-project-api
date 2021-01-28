@@ -1,0 +1,924 @@
+2020-07-23 13:45:54,051 ERROR 26289 [-/127.0.0.1/-/5ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-security@2.8.0@egg-security/app/extend/context.js:91:35)
+    at Object.ensureCsrfSecret (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-security@2.8.0@egg-security/app/extend/context.js:104:13)
+    at csrf (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-security@2.8.0@egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at session (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-session@6.0.0@koa-session/index.js:41:13)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+
+pid: 26289
+hostname: lmq-TM1701
+
+2020-08-11 19:34:34,184 ERROR 17121 [-/127.0.0.1/-/23ms POST /user/login] nodejs.TypeError: Cannot read property 'create' of undefined
+    at UserController.login (/home/lmq/yi-work/test/test-vue-project-api/app/controller/user.js:27:33)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:195:33)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-development@2.5.0@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-i18n@2.1.1@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+
+pid: 17121
+hostname: lmq-TM1701
+
+2020-08-11 19:35:35,281 ERROR 17221 [-/127.0.0.1/-/32ms POST /user/login] nodejs.TypeError: this.ctx.model.create is not a function
+    at UserController.login (/home/lmq/yi-work/test/test-vue-project-api/app/controller/user.js:27:28)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:195:33)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-development@2.5.0@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-i18n@2.1.1@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+
+pid: 17221
+hostname: lmq-TM1701
+
+2020-08-11 19:36:09,222 ERROR 17262 [-/127.0.0.1/-/24ms POST /user/login] nodejs.TypeError: Cannot read property 'create' of undefined
+    at UserController.login (/home/lmq/yi-work/test/test-vue-project-api/app/controller/user.js:27:36)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:195:33)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-development@2.5.0@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-i18n@2.1.1@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+
+pid: 17262
+hostname: lmq-TM1701
+
+2020-08-11 19:45:50,005 ERROR 18279 [-/127.0.0.1/-/4ms POST /user/login] nodejs.TypeError: Cannot read property 'pwd' of null
+    at UserController.login (/home/lmq/yi-work/test/test-vue-project-api/app/controller/user.js:11:14)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 18279
+hostname: lmq-TM1701
+
+2020-08-11 19:46:54,133 ERROR 18279 [-/127.0.0.1/-/2ms POST /user/login] nodejs.TypeError: Cannot read property 'pwd' of null
+    at UserController.login (/home/lmq/yi-work/test/test-vue-project-api/app/controller/user.js:11:14)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 18279
+hostname: lmq-TM1701
+
+2020-08-11 19:48:00,709 ERROR 18972 [-/127.0.0.1/-/9ms POST /user/login] nodejs.TypeError: Cannot read property 'pwd' of null
+    at UserController.login (/home/lmq/yi-work/test/test-vue-project-api/app/controller/user.js:15:14)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 18972
+hostname: lmq-TM1701
+
+2020-08-12 10:25:32,574 ERROR 7190 [-/127.0.0.1/-/0ms GET /] nodejs.Error: users copy is not match 'a-z0-9_-' in users copy.js
+    at properties.map.property (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:234:13)
+    at Array.map (<anonymous>)
+    at defaultCamelize (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:232:21)
+    at getProperties (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:193:10)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:154:28)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 7190
+hostname: lmq-TM1701
+
+2020-08-12 10:25:38,060 ERROR 7215 [-/127.0.0.1/-/0ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Users` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/users.js:16:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 7215
+hostname: lmq-TM1701
+
+2020-08-12 10:25:56,314 ERROR 7308 [-/127.0.0.1/-/1ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Users` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/users.js:16:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 7308
+hostname: lmq-TM1701
+
+2020-08-12 10:27:13,618 ERROR 7569 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: date is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/types.js:10:26)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 7569
+hostname: lmq-TM1701
+
+2020-08-12 15:03:09,790 ERROR 9310 nodejs.ClusterClientNoResponseError: client no response in 7661657ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 9310
+hostname: lmq-TM1701
+
+2020-08-12 19:11:06,775 ERROR 9310 nodejs.ClusterClientNoResponseError: client no response in 7013661ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 9310
+hostname: lmq-TM1701
+
+2020-08-13 12:04:37,382 ERROR 29095 [-/127.0.0.1/-/28ms POST /type/update] nodejs.MongoError: Performing an update on the path '_id' would modify the immutable field '_id'
+    at Function.create (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/core/error.js:51:12)
+    at toError (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/utils.js:123:22)
+    at coll.s.topology.update (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/operations/common_functions.js:376:39)
+    at handler (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/core/sdam/topology.js:913:24)
+    at fn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/cmap/connection_pool.js:356:13)
+    at handleOperationResult (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/core/sdam/server.js:492:5)
+    at MessageStream.messageHandler (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/cmap/connection.js:272:5)
+    at emitOne (events.js:116:13)
+    at MessageStream.emit (events.js:211:7)
+    at processIncomingData (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/cmap/message_stream.js:144:12)
+    at MessageStream._write (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongodb@3.5.10@mongodb/lib/cmap/message_stream.js:42:5)
+    at doWrite (_stream_writable.js:387:12)
+    at writeOrBuffer (_stream_writable.js:373:5)
+    at MessageStream.Writable.write (_stream_writable.js:290:11)
+    at Socket.ondata (_stream_readable.js:639:20)
+    at emitOne (events.js:116:13)
+driver: true
+name: "MongoError"
+index: 0
+code: 66
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 29095
+hostname: lmq-TM1701
+
+2020-08-13 16:00:25,798 ERROR 13374 nodejs.ClusterClientNoResponseError: client no response in 10898791ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 13374
+hostname: lmq-TM1701
+
+2020-08-13 19:19:40,166 ERROR 13374 nodejs.ClusterClientNoResponseError: client no response in 11554339ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 13374
+hostname: lmq-TM1701
+
+2020-08-13 20:43:07,213 ERROR 13374 nodejs.ClusterClientNoResponseError: client no response in 806836ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 13374
+hostname: lmq-TM1701
+
+2020-08-15 09:34:57,705 ERROR 13374 nodejs.ClusterClientNoResponseError: client no response in 128030249ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 13374
+hostname: lmq-TM1701
+
+2020-08-15 09:36:30,254 ERROR 13374 nodejs.ClusterClientNoResponseError: client no response in 72542ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 13374
+hostname: lmq-TM1701
+
+2020-08-15 10:00:18,987 ERROR 13374 nodejs.ClusterClientNoResponseError: client no response in 1368727ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 13374
+hostname: lmq-TM1701
+
+2020-08-15 10:38:15,516 ERROR 9837 [-/127.0.0.1/-/0ms GET /] nodejs.Error: types copy is not match 'a-z0-9_-' in types copy.js
+    at properties.map.property (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:234:13)
+    at Array.map (<anonymous>)
+    at defaultCamelize (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:232:21)
+    at getProperties (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:193:10)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:154:28)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 9837
+hostname: lmq-TM1701
+
+2020-08-15 10:38:19,168 ERROR 9853 [-/127.0.0.1/-/0ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Types` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/types.js:15:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 9853
+hostname: lmq-TM1701
+
+2020-08-15 10:38:40,862 ERROR 9946 [-/127.0.0.1/-/1ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Types` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/types.js:15:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 9946
+hostname: lmq-TM1701
+
+2020-08-15 10:38:48,321 ERROR 9989 [-/127.0.0.1/-/0ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Types` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/types.js:15:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 9989
+hostname: lmq-TM1701
+
+2020-08-15 10:38:49,956 ERROR 10009 [-/127.0.0.1/-/0ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Types` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/types.js:15:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10009
+hostname: lmq-TM1701
+
+2020-08-15 10:39:00,677 ERROR 10079 [-/127.0.0.1/-/0ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Types` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/types.js:15:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10079
+hostname: lmq-TM1701
+
+2020-08-15 10:39:11,981 ERROR 10137 [-/127.0.0.1/-/0ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Types` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/types.js:15:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10137
+hostname: lmq-TM1701
+
+2020-08-15 10:39:32,555 ERROR 10225 [-/127.0.0.1/-/0ms GET /] nodejs.OverwriteModelError: Cannot overwrite `Types` model once compiled.
+    at Mongoose.model (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:524:13)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/types.js:15:19)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10225
+hostname: lmq-TM1701
+
+2020-08-15 10:39:56,777 ERROR 10284 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:16:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10284
+hostname: lmq-TM1701
+
+2020-08-15 10:40:07,394 ERROR 10329 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:16:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10329
+hostname: lmq-TM1701
+
+2020-08-15 10:40:17,056 ERROR 10369 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:16:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10369
+hostname: lmq-TM1701
+
+2020-08-15 10:40:31,133 ERROR 10385 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:16:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10385
+hostname: lmq-TM1701
+
+2020-08-15 10:40:52,365 ERROR 10398 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:16:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10398
+hostname: lmq-TM1701
+
+2020-08-15 10:41:05,767 ERROR 10410 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:16:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10410
+hostname: lmq-TM1701
+
+2020-08-15 10:41:15,997 ERROR 10469 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:16:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 10469
+hostname: lmq-TM1701
+
+2020-08-15 10:44:59,672 ERROR 11867 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 11867
+hostname: lmq-TM1701
+
+2020-08-15 10:45:09,965 ERROR 11897 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 11897
+hostname: lmq-TM1701
+
+2020-08-15 10:45:38,565 ERROR 12055 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 12055
+hostname: lmq-TM1701
+
+2020-08-15 10:45:49,954 ERROR 12121 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 12121
+hostname: lmq-TM1701
+
+2020-08-15 10:56:17,274 ERROR 12982 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 12982
+hostname: lmq-TM1701
+
+2020-08-15 10:56:24,149 ERROR 13050 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 13050
+hostname: lmq-TM1701
+
+2020-08-15 10:57:22,259 ERROR 13276 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 13276
+hostname: lmq-TM1701
+
+2020-08-15 10:57:42,572 ERROR 13346 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 13346
+hostname: lmq-TM1701
+
+2020-08-15 10:58:19,779 ERROR 13424 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 13424
+hostname: lmq-TM1701
+
+2020-08-15 10:58:34,828 ERROR 13484 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: GoodsSchema is not defined
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/app/model/goods.js:17:34)
+    at getExports (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:220:15)
+    at FileLoader.parse (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/egg_loader.js:388:25)
+    at loadModelToApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:111:14)
+    at app.beforeStart (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:50:7)
+    at Object.callFn (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:42)
+    at process.nextTick (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:256:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:678:11)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+
+pid: 13484
+hostname: lmq-TM1701
+
+2020-08-16 08:34:48,370 ERROR 13547 nodejs.ClusterClientNoResponseError: client no response in 73766134ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 13547
+hostname: lmq-TM1701
+
+2020-08-17 09:07:46,242 ERROR 13547 nodejs.ClusterClientNoResponseError: client no response in 60337161ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 13547
+hostname: lmq-TM1701
+
+2020-09-09 19:58:21,848 ERROR 11311 [egg-mongoose] mongodb://root:******@127.0.0.1:27017/test-vue-project disconnected
+2020-09-09 19:58:21,850 ERROR 11311 nodejs.MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 11311
+hostname: lmq-TM1701
+
+2020-09-09 19:58:21,851 ERROR 11311 nodejs.MongooseServerSelectionError: [egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "[egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 11311
+hostname: lmq-TM1701
+
+2020-09-09 19:58:21,852 ERROR 11311 [-/127.0.0.1/-/0ms GET /] nodejs.MongooseServerSelectionError: [egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "[egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 11311
+hostname: lmq-TM1701
+
+2020-10-20 10:58:55,747 ERROR 26914 [egg-mongoose] mongodb://root:******@127.0.0.1:27017/test-vue-project disconnected
+2020-10-20 10:58:55,749 ERROR 26914 nodejs.MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 26914
+hostname: lmq-TM1701
+
+2020-10-20 10:58:55,749 ERROR 26914 nodejs.MongooseServerSelectionError: [egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "[egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 26914
+hostname: lmq-TM1701
+
+2020-10-20 10:58:55,751 ERROR 26914 [-/127.0.0.1/-/0ms GET /] nodejs.MongooseServerSelectionError: [egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "[egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 26914
+hostname: lmq-TM1701
+
+2020-10-22 20:29:17,775 ERROR 22825 nodejs.ClusterClientNoResponseError: client no response in 13038825ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 22825
+hostname: lmq-TM1701
+

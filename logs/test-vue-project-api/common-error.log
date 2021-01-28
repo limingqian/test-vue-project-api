@@ -1,0 +1,87 @@
+2020-11-16 13:38:11,881 ERROR 16873 [egg-mongoose] mongodb://root:******@127.0.0.1:27017/test-vue-project disconnected
+2020-11-16 13:38:11,886 ERROR 16873 nodejs.MongooseServerSelectionError: [egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "[egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 16873
+hostname: lmq-TM1701
+
+2020-11-16 13:38:11,888 ERROR 16873 nodejs.MongooseServerSelectionError: [egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "[egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 16873
+hostname: lmq-TM1701
+
+2020-11-16 13:38:11,894 ERROR 16873 [-/127.0.0.1/-/1ms GET /] nodejs.MongooseServerSelectionError: [egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/connection.js:828:32)
+    at Mongoose.createConnection (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_mongoose@5.9.28@mongoose/lib/index.js:279:17)
+    at Singleton.createOneClient [as create] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:69:23)
+    at Singleton.createInstance (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:88:17)
+    at Singleton.initSync (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:31:27)
+    at Singleton.init (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/core/singleton.js:21:68)
+    at Application.addSingleton (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/egg.js:464:35)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/lib/mongoose.js:31:7)
+    at module.exports.app (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-mongoose@3.2.0@egg-mongoose/app.js:4:57)
+    at Hook.configDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:91:9)
+    at Lifecycle.triggerConfigDidLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:145:14)
+    at Lifecycle.triggerConfigWillLoad (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/lifecycle.js:139:10)
+    at AppWorkerLoader.loadCustomApp (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/custom.js:37:20)
+    at AppWorkerLoader.load (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/loader/app_worker_loader.js:35:10)
+    at new Application (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg@2.27.0@egg/lib/application.js:66:19)
+    at Object.<anonymous> (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_egg-cluster@1.26.0@egg-cluster/lib/app_worker.js:21:13)
+message: "[egg-mongoose]connect ECONNREFUSED 127.0.0.1:27017"
+reason: {"type":"Single","setName":null,"maxSetVersion":null,"maxElectionId":null,"servers":{},"stale":false,"compatible":true,"compatibilityError":null,"logicalSessionTimeoutMinutes":null,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"commonWireVersion":null}
+pid: 16873
+hostname: lmq-TM1701
+
+2020-11-17 08:59:56,882 ERROR 26715 nodejs.ClusterClientNoResponseError: client no response in 57551153ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 26715
+hostname: lmq-TM1701
+
+2021-01-28 13:11:08,349 ERROR 6293 nodejs.ClusterClientNoResponseError: client no response in 1690612ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/home/lmq/yi-work/test/test-vue-project-api/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 6293
+hostname: lmq-TM1701
+
